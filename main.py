@@ -9,6 +9,18 @@ def faktor(n):
 
 while True:
     n = int(input("Masukkan Nilai = "))
-    print(f"{n}! = {factorial(n)}")
-    print(f"Faktor dari {n} adalah: {faktor(n)}")
-    print()  
+    
+    print("Pilih Menu:")
+    print("A. Faktorial")
+    print("B. Faktor")
+    
+    pilihan = input("Masukkan pilihan (A/B): ").upper()
+    
+    if pilihan == 'A':
+        print(f"{n}! = {factorial(n)}")
+    elif pilihan == 'B':
+        print(f"Faktor dari {n} adalah: {faktor(n)}")
+    else:
+        print("Pilihan tidak valid! Silakan pilih A atau B.")
+    
+    print()
